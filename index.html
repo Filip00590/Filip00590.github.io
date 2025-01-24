@@ -14,24 +14,24 @@
             align-items: center;
             text-align: center;
             color: white;
-            overflow: hidden; /* Zapobiega przewijaniu */
+            overflow: hidden;
         }
         h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin-bottom: 40px;
             font-size: 36px;
-            z-index: 2; /* Zapewnia, że tekst będzie na wierzchu */
+            z-index: 2;
         }
         p {
             font-size: 20px;
             margin: 0;
-            z-index: 2; /* Zapewnia, że tekst będzie na wierzchu */
+            z-index: 2;
         }
         .link-container {
             display: flex;
             flex-direction: column;
-            gap: 20px; 
-            z-index: 2; /* Zapewnia, że linki będą na wierzchu */
+            gap: 20px;
+            z-index: 2;
         }
         a {
             color: white;
@@ -40,35 +40,35 @@
             display: flex;
             align-items: center;
             padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.6); 
+            background-color: rgba(0, 0, 0, 0.6);
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         a:hover {
-            background-color: rgba(255, 255, 255, 0.2); 
+            background-color: rgba(255, 255, 255, 0.2);
         }
         a img {
             width: 25px;
             height: 25px;
-            margin-right: 15px; 
+            margin-right: 15px;
         }
-        /* Styl dla tła wideo */
         .video-background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Dopasowuje film do całego tła */
-            z-index: -1; /* Ustawia wideo w tle */
+            object-fit: cover;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
     <!-- Film w tle -->
     <video autoplay muted loop class="video-background">
-        <source src="/github/Trailer of JAPAN - Kyoto, Tokyo and more.mp4" type="video/mp4">
-        Twoja przeglądarka nie obsługuje odtwarzania wideo.
+        <!-- Ścieżka do pliku wideo na GitHubie -->
+        <source src="https://raw.githubusercontent.com/Filip00590/Assets/main/assets/Trailer%20of%20JAPAN%20-%20Kyoto%2C%20Tokyo%20and%20more.mp4" type="video/mp4">
+        <img src="fallback-image.jpg" alt="Video background">
     </video>
 
     <h1>Filip00590 site</h1>
@@ -82,7 +82,7 @@
         <a href="https://open.spotify.com/user/swkkcpb7ymwdl3wmxd3vygzwf?si=22a1c58faa51479d" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify logo">Spotify
         </a>
-        <a href="https://twitter.com/kapitano_bomba" target="_blank">
+        <a href="https://twitter.com/yourprofile" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/240px-X_logo_2023.svg.png" alt="X (Twitter) logo">X (Twitter)
         </a>
         <a href="https://www.youtube.com/@FRPiano831" target="_blank">
