@@ -6,32 +6,32 @@
     <title>Filip00590</title>
     <style>
         body {
-            background-image: url('/github/tlo.gif');
-            background-repeat: no-repeat;
-            background-size: cover; 
-            height: 100vh;
             margin: 0;
-            background-color: rgb(0, 0, 0);
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
+            overflow: hidden; /* Zapobiega przewijaniu */
         }
         h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin-bottom: 40px;
             font-size: 36px;
+            z-index: 2; /* Zapewnia, że tekst będzie na wierzchu */
         }
         p {
             font-size: 20px;
             margin: 0;
+            z-index: 2; /* Zapewnia, że tekst będzie na wierzchu */
         }
         .link-container {
             display: flex;
             flex-direction: column;
             gap: 20px; 
+            z-index: 2; /* Zapewnia, że linki będą na wierzchu */
         }
         a {
             color: white;
@@ -52,9 +52,25 @@
             height: 25px;
             margin-right: 15px; 
         }
+        /* Styl dla tła wideo */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Dopasowuje film do całego tła */
+            z-index: -1; /* Ustawia wideo w tle */
+        }
     </style>
 </head>
 <body>
+    <!-- Film w tle -->
+    <video autoplay muted loop class="video-background">
+        <source src="/github/Trailer of JAPAN - Kyoto, Tokyo and more.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje odtwarzania wideo.
+    </video>
+
     <h1>Filip00590 site</h1>
     <div class="link-container">
         <a href="https://steamcommunity.com/profiles/76561198118415108" target="_blank">
@@ -66,7 +82,7 @@
         <a href="https://open.spotify.com/user/swkkcpb7ymwdl3wmxd3vygzwf?si=22a1c58faa51479d" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify logo">Spotify
         </a>
-        <a href="" target="_blank">
+        <a href="https://twitter.com/kapitano_bomba" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/240px-X_logo_2023.svg.png" alt="X (Twitter) logo">X (Twitter)
         </a>
         <a href="https://www.youtube.com/@FRPiano831" target="_blank">
